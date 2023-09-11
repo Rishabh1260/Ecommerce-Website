@@ -1,38 +1,124 @@
 .App {
-  text-align: center;
+  
+  background-color: #192439;
+  place-items: center;
+  
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.container{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(177deg, #192439 17.71%, #243B55 77.16%);
+  padding-top: 100px   ;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+ 
+}
+
+
+.search-div{
+  display: flex;
+  justify-content: center;
+  
+  
+
+}
+
+.search-button-icon{
+  padding-top : 6px;
+  padding-right : 63%; 
+  translate : transform(-30% , -63%);
+  position : absolute;
+  height : 20px;
+}
+
+.search-bar{
+
+  
+border-radius: 88px;
+background: #D9D9D9;
+padding-left:40px;
+/* min-width: 250px; */
+width: 60vw;
+height: 4vh;
+}
+
+.product-container{
+  border-radius: 18px;
+background: rgba(217, 217, 217, 0.05);
+box-shadow: 0px 4px 53px 0px rgba(0, 0, 0, 0.47);
+backdrop-filter: blur(24.507999420166016px);
+
+width: 80vw;
+height: 340px ;
+display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 50px;
+
+
+}
+
+.Productimage {
+  height: 250px;
+  width: 250px;
+  margin-right: 62px; /* Adjust the margin as needed */
+  margin-top: 25px; /* Adjust the margin as needed */
+  mix-blend-mode: color-burn;
+
+
+}
+
+
+.separator {
+  width: 1px; 
+  
+  height: 230px;
+  background-color: #000000; /* Adjust the color of the vertical line */
+  margin:60px; /* Adjust the margin to control the spacing between the image and details */
+}
+
+p{
+  margin-left: 10%;
+  
+color: #FFF;
+height: auto;
+width: 25vw;
+
+
+}
+
+h2{
+  
+  
+color: #FFF;
+
+
+}
+
+h3{
+  margin-left: 10%;
+  
+color: #FFF;
+
+
+}
+
+.button{
+  background: transparent;
+  border: none;
   color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+   /* To make only text visible */
+  transition: text-shadow 0.3s ease; /* Add a transition for the text shadow */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:hover {
+  color:  rgb(218, 218, 218); /* Apply a blue glow on hover */
+  transition: text-shadow 0.3s ease;
 }

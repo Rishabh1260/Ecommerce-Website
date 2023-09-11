@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import SearchBar from './components/search';
+import Product from './components/product';
+
 
 function App() {
+  const [searchResults, setSearchResults] = useState([]);
+  
+  const handleSearch = (query) => {
+    // Implement your search logic here (e.g., fetch data from an API)
+    // Update the searchResults state with the search results
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <SearchBar onSearch={handleSearch} />
+      {/* Display search results */}
+      <Product />
     </div>
   );
 }
